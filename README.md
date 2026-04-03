@@ -1,6 +1,6 @@
 # 🚀 Flappy Boy: The Ultimate Flappy Adventure!
 
-![Flappy Boy](flappybird.gif)
+![Flappy Boy](forgithub.png)
 
 Welcome to **Flappy Boy**, the game where physics is a suggestion and gravity is your worst enemy! 
 
