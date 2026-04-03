@@ -195,9 +195,18 @@ function update() {
 
 function drawBird() {
     context.save();
+    let currentWidth = bird.width;
+    let currentHeight = bird.height;
+
+    // 8x bigger at the start screen (current bird.width is already 2x, so we multiply by 4)
+    if (!gameStarted) {
+        currentWidth *= 4;
+        currentHeight *= 4;
+    }
+
     context.translate(bird.x + bird.width / 2, bird.y + bird.height / 2);
     context.rotate(bird.angle);
-    context.drawImage(birdImgs[birdFrame], -bird.width / 2, -bird.height / 2, bird.width, bird.height);
+    context.drawImage(birdImgs[birdFrame], -currentWidth / 2, -currentHeight / 2, currentWidth, currentHeight);
     context.restore();
 }
 
